@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(255, 115, 80);
+    background-image: url("https://homeworks.umcommunities.org/wp-content/uploads/sites/10/2016/11/iStock_76299425_LARGE.jpg"); 
+    /* background-image: url("https://s3.amazonaws.com/46hca/HCA/tx-hca-main-video-website-ff.jpg"); */
+    position: relative;
+    background-attachment: fixed; 
+    background-position-x: /* 0px; */ -390px; 
+    background-size: cover;
+    margin: 0; /* removes default margins from body */
+}
+#subheader { /* transparent element allowing visibility of background image */
+    background-color: rgb(0, 0, 0, 0);
+    min-width: 320px;
+    height: 757px; /* controls gap between header and main */
+}
+#stickynav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgb(0, 0, 0, 0);
+    padding: 0 0 0 0;
+    overflow: auto; /* prevents container from collapsing on ul float */
+}
+nav ul { /* contains the ul bullets */
+    background-color: rgb(0, 0, 0, 0);
+    margin: 0; /* removes default margins */
+    padding: 8px;
+}
+nav ul li {
+    display: inline-block; /* displays list horizonally */
+    margin: 0 5% 0 5%; /* sets space between strings */
+}
+.navListItem { /* contains the list strings */
+    font-size: 1em;
+    padding: 2px;
+    border: 1px solid rgb(0, 0, 0, 0);
+    transition: 0.6s;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0, 0);
+}
+.navListItem:hover {
+    border: 1px solid black;
+    padding: 2px;
+  
+}
+#magic_header {
+    position: fixed;
+    background-color: rgb(151, 61, 96, 1);
+    padding: 10px 10px 10px 10px;
+    min-width: 320px;
+    left: 0;
+    right: 0;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -2;
+}
+#logo {
+    padding: 40px 0 0 0;
+    position: fixed;
+    width: 535px; /* 39%; */
+    height: auto;
+    /* min-width: 178px; */
+    /* min-height: 42px; */
+    /* max-height: 128px; */
+    /* max-width: 535px; */
+    z-index: -1;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+main {
+    display: inline-block;
+    background-color: rgb(255, 115, 80);
+    min-width: 320px;
+    margin: 0 0 0 0; /* top margin ensures that top of lower container does not initially hide behind header */
+    padding: 10px;
+}
+footer {
+    background-color: rgb(151, 61, 96);
+    padding: 10px;
+    min-width: 320px;
+    min-height: 100px;
+}
+h1 {  
+    background-color: rgb(255, 115, 80);
+    font-size: 3em;
+    padding: 40px 0 0 0;
+    text-align: center;
+    margin: 0;
+}
+h2 {
+    padding: 10px;
+    margin: 0;
+}
+h3 {
+    padding: 10px;
+    margin: 0;
+}
+.article_text {
+    background-color: rgb(255, 115, 80, 0);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 10px;
+}
+#copyright {
+    display: inline-block;
+    background-color: rgb(151, 61, 96, 0);
+    padding: 10px;
+}
+.flex_box_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left_article {
+    background-color: rgb(255, 115, 80);
+    width: auto;
+    padding: 10px;
+}
+.right_article {
+    background-color: rgb(255, 115, 80);
+    width: auto;
+    padding: 10px;
+}
