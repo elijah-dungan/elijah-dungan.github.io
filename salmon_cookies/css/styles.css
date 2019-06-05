@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@keyframes shake { /* from w3schools "https://www.w3schools.com/howto/howto_css_shake_image.asp" */
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+* {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(255, 90, 90);
+    min-width: 960px;
+    margin: 0;
+}
+#sticky-header {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 90, 90);
+    border-bottom: 2px solid rgb(235, 235, 0);
+}
+#contact-number {
+    margin: -0.2% 2.9% -0.6% 0;
+    text-align: right;
+}
+nav {
+    margin: 0;
+    padding: 0 3% 0.5% 3%;
+}
+.flex-box-container-two {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 999;
+}
+#logo-area {
+    margin: 0 0 -4px 0;
+}
+#logo {
+    padding: 0;
+    width: 40px;
+}
+#links-area {
+    margin: 0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+
+}
+nav div ul li a { 
+    border-left: 2px solid rgb(235, 235, 0);
+    padding: 0 50px 0 50px;
+    color: rgb(235, 235, 0);
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.border-right {
+    border-right: 2px solid rgb(235, 235, 0);
+}
+nav div ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+#login-area {
+    margin: 0;
+}
+.button {
+    margin: 0;
+    border: 1px solid rgb(235, 235, 0);
+    border-radius: 25px;
+    padding: 3px 8px 3px 8px;
+    height: 30px;
+    width: 75px;
+    background-color: rgb(255, 120, 120, 0.85);
+    color: rgb(235, 235, 0);
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 
+    inset 0 2px 5px 0 rgba(255, 255, 255, 0.5),
+    inset 0 0 3px 0 rgba(0, 0, 0, 0.5),
+    inset 0 0 3px 5px rgba(0, 0, 0, 0.05),
+    0 6px 4px rgb(0, 0, 0, 0.30);
+}
+.button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 140, 140, 0.85);
+    box-shadow: 
+    inset 0 2px 5px 0 rgba(255, 255, 255, 0.5),
+    inset 0 0 3px 0 rgba(0, 0, 0, 0.5),
+    inset 0 0 3px 5px rgba(0, 0, 0, 0.05),
+    0 6px 4px rgb(0, 0, 0, 0.2);
+}
+.flex-box-container-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.image-area-one {
+    margin: 0 0 0 0;
+    width: auto;
+}
+#product-image-area {
+    background-color: rgb(255, 255, 255);
+    margin: 0 0 0 0;
+    width: auto;
+}
+#about-image-area {
+    background-image: url('https://elijah-dungan.github.io/imagebucket/family.jpg'); 
+    width: 100%;
+    background-attachment: fixed; 
+    background-size: cover;
+    margin: 0; 
+}
+#about-image-area p {
+    margin: 0;
+    line-height: 175%;
+    padding: 0 2% 0 2%;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(50, 50, 50);
+}
+.text-area {
+    margin: 0 auto 0 auto;
+    width: 960px;
+}
+#salmon-image {
+    display: block;
+    margin: 10px auto 14px auto;
+    width: 38.2%; /*590px;*/
+}
+#salmon-image:hover {
+    animation: shake 0.7s; 
+    animation-iteration-count: infinite; 
+}
+.quotation {
+    margin: 1% 0 0 0;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-family: 'Indie Flower', cursive;
+    color: rgb(235, 235, 0);
+}
+.padding-transparent {
+    padding: 90px 0 0 0;
+}
+.padding-red {
+    background-color: rgb(255, 90, 90);
+    padding: 85px 0 0 0;
+}
+.padding-white {
+    background-color: rgb(255, 255, 255);
+    padding: 85px 0 0 0;
+}
+.product-display {
+    width: 290px;
+    height: 260px;
+    border: 2px solid rgb(255, 90, 90);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-display img {
+    padding: 1px;
+    object-fit: contain;
+}
+.product-wrap {
+    margin: 10px 10px 30px 10px;
+    text-align: center;
+}
+#hero-image {
+    background-image: radial-gradient(ellipse, rgb(255, 120, 120) 25%, rgb(255, 90, 90) 65%, rgb(255, 90, 90));
+    padding: 0 0 0 0;
+}
+#stores-area {
+    margin: 0;
+    background-color: rgb(255, 90, 90);
+    /*background-image: url('https://elijah-dungan.github.io/imagebucket/65_Salmon_Sub2.jpg');*/
+    background-repeat: repeat;
+}
+.h1-yellow {
+    margin: 0;
+    padding: 0.4% 0 0.4% 0;
+    color: rgb(235, 235, 0);
+    font-family: 'Stylish', Arial, sans-serif;
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: center;
+}
+.h1-white {
+    margin: 0;
+    padding: 0.4% 0 0.4% 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Stylish', Arial, sans-serif;
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: center;
+}
+.h1-pink {
+    margin: 0;
+    padding: 0.4% 0 0.4% 0;
+    color: rgb(255, 90, 90);
+    font-family: 'Stylish', Arial, sans-serif;
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: center;
+}
+.h1-black {
+    margin: 0;
+    padding: 0.4% 0 0.4% 0;
+    color: rgb(50, 50, 50);
+    font-family: 'Stylish', Arial, sans-serif;
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: center;
+}
+h2 {
+    background-color: rgb(255, 90, 90);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 8px 6px 8px;
+    color: rgb(235, 235, 0);
+    text-align: center;
+}
+h3 {
+    margin: 1%;
+    padding: 1%;
+    color: rgb(50, 50, 50);
+    text-align: center;
+}
+#tm {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+#admin {
+    background-color: rgb(255, 90, 90);
+}
+.submit-area {
+    width: 887px;
+    margin: 0 auto 20px auto;
+}
+fieldset {
+    border: none;
+    padding: 0;
+}
+.input {
+    width: 16%;
+    color: rgb(0, 0, 0);
+}
+::placeholder {
+    color: rgb(125, 125, 125);
+}
+.table-area {
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 0 0 1.4% 0;
+} 
+.forms {
+    margin: 10px auto 24px auto;
+    border: 1px solid rgb(235, 235, 0);
+    padding: 1%;
+    min-width: 875px;
+    background-color: rgb(255, 120, 120, 0.85);
+    border-radius: 25px;
+    box-shadow: 
+    inset 0 2px 5px 0 rgba(255, 255, 255, 0.5),
+    inset 0 0 3px 0 rgba(0, 0, 0, 0.5),
+    inset 0 0 3px 5px rgba(0, 0, 0, 0.05),
+    0 6px 4px rgb(0, 0, 0, 0.25);
+    font-size: 1em;
+    font-weight: bolder;
+    list-style-type: none;
+    text-align: center;
+    padding: 0.5%;
+}
+th {
+    padding: 0.5%;
+}
+td:first-child {
+    width: 175px;
+    color: rgb(235, 235, 0);
+}
+.quote-area {
+    display: block;
+    padding: 0 0 0.5% 0;
+    text-align: center;
+}
+.hours-locations {
+    font-size:1.2em;
+}
+.highlight {
+    color: rgb(235, 235, 0);
+    font-weight: bolder;
+}
+.mapouter {
+    margin: 0 auto 0 auto;
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 875px;
+}
+.gmap_canvas {
+    border: 1px solid rgb(235, 235, 0);
+    border-radius: 25px;
+    overflow: hidden;
+    background: none !important;
+    box-shadow: 
+    inset 0 2px 5px 0 rgba(255, 255, 255, 0.5),
+    inset 0 0 3px 0 rgba(0, 0, 0, 0.5),
+    inset 0 0 3px 5px rgba(0, 0, 0, 0.05),
+    0 6px 4px rgb(0, 0, 0, 0.25);
+    height: 500px;
+    width: 875px;
+}
+footer {
+    border-top: 2px solid rgb(235, 235, 0);
+    background-color: rgb(255, 90, 90);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 63px;
+    z-index: 999;
+    margin: 0;
+    padding: 1%;
+    text-align: center;
+}
